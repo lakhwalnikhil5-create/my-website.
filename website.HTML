@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: white;
+            background: linear-gradient(135deg, #141e30, #4b0082, #0072ff);
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            color: #ffd166;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px 65px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #ffd166;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 5px;
+        }
+
+        section {
+            padding: 35px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #ffd166;
+            margin-bottom: 22px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 15px;
+            width: 250px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #ffd166;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 25px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Hello, I'm <span>NIKHIL RAJPUT</span></h1>
+        <p>
+            Electronics & Computer Engineering Student<br>
+            Aspiring Software Engineer | C | Python | HTML
+        </p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an engineering student passionate about coding,
+            technology and software development.
+            I love learning new skills and building projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Learning programming logic and problem solving.</p>
+            </div>
+            <div class="card">
+                <h3>Python</h3>
+                <p>Practicing Python programs and basic concepts.</p>
+            </div>
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Building and designing my first website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>A basic calculator project using programming.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Home Automation</h3>
+                <p>A project to control home appliances using a mobile app.</p>
+            </div>
+            <div class="card">
+                <h3>My Portfolio</h3>
+                <p>My first personal website using HTML and CSS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <p>Let's learn, build and grow together!</p>
+        <a href="https://github.com/" class="btn" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" class="btn" target="_blank">LinkedIn</a>
+    </section>
+
+    <footer>
+        <p>© 2026 My Portfolio | Created with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
